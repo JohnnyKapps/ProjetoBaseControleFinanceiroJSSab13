@@ -96,3 +96,10 @@ body {
     background: #f3f3f3;
     transform: scale(1.02, 1.02);
 }
+
+@media (max-width: 768px) 
+{
+    .form {
+        width: 100%;
+    }
+}

@@ -70,5 +70,5 @@ function despesaValida(despesa){
 }
 
 function exibeErro(){
-    alert(mensagem);
+    document.getElementById('error').innerHTML = mensagem;
 }
