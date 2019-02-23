@@ -60,7 +60,7 @@ function despesaValida(despesa){
         mensagem = "Informe uma descrição"
     }
 
-    if(despesa.valor == "")
+    if(isNaN(despesa.valor))
     {
         valido = false;
         mensagem = "Informe um valor"
