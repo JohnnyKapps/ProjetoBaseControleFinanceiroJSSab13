@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Controle Financeiro</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Controle Financeiro</h1>
+            <p>Utilize este sistema para controlar suas finanças</p>
+        </div>
+        <div class="content">
+            <div class="status">
+                <input id="salario" type="number" class="input" placeholder="Informe aqui seu salario">
+                <p>Valor liquido: R$ <span id="total">0</span></p>
+            </div>
+            <button id="abrir-formulario" class="bt" onclick="mostrarFormulario()">Adicionar despesa</button>
+            <div id="form" class="form hidden">
+                <h2 class="title">Nova despesa</h2>
+                <div class="group">
+                    <label for="nome" class="titulo subtitle">Descrição</label>
+                    <input type="text" class="input input-lg"  name="nome" id="nome">
+                </div>
+                <div class="group">
+                    <label for="valor" class="titulo subtitle">Valor</label>
+                    <input type="number" class="input input-lg"  name="valor" id="valor">
+                </div>
+                <button id="salvar" class="bt" onclick="salvar()">Salvar</button>
+            </div>
+            <div class="listagem">
+                <h2>Lançamentos</h2>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lancamentos">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

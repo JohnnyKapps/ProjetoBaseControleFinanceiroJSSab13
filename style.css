@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+    width: 0px;
+}
+
+.input {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+}
+
+.input-lg {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.bt {
+    color: black;
+    background: orange;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 15px; 
+    font-size: 18px;
+}
+
+.title {
+    font-size: 32px;
+    position: relative;
+    display: inline-block;
+}
+
+.title:before {
+    content: '';
+    width: 80px;
+    height: 5px;
+    background: orange;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 3px;
+    width: 100%;
+    display: inline-block;
+}
+
+.status p {
+    font-size: 32px;
+}
+
+.form {
+    width: 30%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #f7f7f7;
+    height: 100%;
+    box-shadow: -5px 0px 15px lightgrey;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.listagem {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tabela {
+    width: 100%;
+    font-size: 24px;
+}
+
+.tabela tr{
+    transition: all 0.2s ease;
+}
+
+.tabela td {
+    padding: 10px;
+}
+
+.tabela tr:hover {
+    background: #f3f3f3;
+    transform: scale(1.02, 1.02);
+}
